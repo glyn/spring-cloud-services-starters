@@ -40,7 +40,7 @@
 		<spring-boot.version>1.2.8.RELEASE</spring-boot.version>
 		<spring-cloud.version>Angel.SR6</spring-cloud.version>
 		<spring-security-oauth2.version>2.0.9.RELEASE</spring-security-oauth2.version>
-		<spring-cloud-connectors.version>1.2.1.RELEASE</spring-cloud-connectors.version>
+		<spring-cloud-connectors.version>1.2.2.RELEASE</spring-cloud-connectors.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
