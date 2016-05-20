@@ -37,10 +37,6 @@
 	</developers>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
-		<spring-boot.version>1.2.8.RELEASE</spring-boot.version>
-		<spring-cloud.version>Angel.SR6</spring-cloud.version>
-		<spring-security-oauth2.version>2.0.8.RELEASE</spring-security-oauth2.version>
-		<spring-cloud-connectors.version>1.2.1.RELEASE</spring-cloud-connectors.version>
 		<spring-cloud-services-connectors.version>1.0.2.BUILD-SNAPSHOT</spring-cloud-services-connectors.version>
 		<cloudfoundry-certificate-truster.version>1.0.2.BUILD-SNAPSHOT</cloudfoundry-certificate-truster.version>
 	</properties>
@@ -64,21 +60,6 @@
 			</dependency>
 			<!-- dependencies -->
 			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-core</artifactId>
-				<version>${spring-cloud-connectors.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-spring-service-connector</artifactId>
-				<version>${spring-cloud-connectors.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-cloudfoundry-connector</artifactId>
-				<version>${spring-cloud-connectors.version}</version>
-			</dependency>
-			<dependency>
 				<groupId>io.pivotal.spring.cloud</groupId>
 				<artifactId>spring-cloud-services-cloudfoundry-connector</artifactId>
 				<version>${spring-cloud-services-connectors.version}</version>
@@ -92,25 +73,6 @@
 				<groupId>io.pivotal.spring.cloud</groupId>
 				<artifactId>cloudfoundry-certificate-truster</artifactId>
 				<version>${cloudfoundry-certificate-truster.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.security.oauth</groupId>
-				<artifactId>spring-security-oauth2</artifactId>
-				<version>${spring-security-oauth2.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>${spring-cloud.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-dependencies</artifactId>
-				<version>${spring-boot.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

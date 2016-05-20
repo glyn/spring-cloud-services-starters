@@ -37,13 +37,36 @@
 	</developers>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
+		<spring-boot.version>1.2.8.RELEASE</spring-boot.version>
+		<spring-cloud.version>Angel.SR6</spring-cloud.version>
+		<spring-security-oauth2.version>2.0.9.RELEASE</spring-security-oauth2.version>
+		<spring-cloud-connectors.version>1.2.1.RELEASE</spring-cloud-connectors.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
+				<groupId>org.springframework.security.oauth</groupId>
+				<artifactId>spring-security-oauth2</artifactId>
+				<version>${spring-security-oauth2.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>io.pivotal.spring.cloud</groupId>
 				<artifactId>spring-cloud-services-dependencies</artifactId>
 				<version>1.0.3.BUILD-SNAPSHOT</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<version>${spring-boot.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
